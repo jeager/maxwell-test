@@ -1,6 +1,12 @@
-## Exercise QA Automation: Verify the landing page display's a Lender's NMLS number
+## Exercise QA Automation: A smoke test to verify the landing page functionality
 
-* We want to verify that a Lender's NMLS number is displayed on their landing page.
-* Using Selenium or any other open source automated testing framework, verify that when a visitor goes to the following URL, the page displays a NMLS number 11112 for the Lender:
-   * https://snap.modernemortgage.com/home/mobile-test
-* Please provide a README with instructions on how to run the automated verification test.
+* Implement a test to verify the basic functionality of a Lender's landing page:
+  * Using Selenium or any other open source automated testing framework, verify the landing page at https://snap.modernemortgage.com/home/mobile-test
+  * Test 1: The page displays an email address for the Lender.
+  * Test 2: After clicking the "Apply Now" button, the resulting page displays the same email address as in Test 1.
+
+## Expectations from your solution
+* The test/tests you create can be run by someone from the Maxwell team.
+  * E.g. A script that can be run from the command line or another application that was used.
+* Provide a README with instructions on how to run the automated verification test.
+* The "output" should display the success or failure state of each test.
