@@ -10,3 +10,4 @@
   * E.g. A script that can be run from the command line or another application that was used.
 * Provide a README with instructions on how to run the automated verification test.
 * The "output" should display the success or failure state of each test.
+* Provide a screen recording of your tests running that can be viewing by someone from the Maxwell team. 
