@@ -31,11 +31,9 @@ We are looking for you to demonstrate your knowledge related to common software 
 
 If you want to write test for your solutions then please go ahead, but no points will be added for having tests, nor will points be deducted for not having any tests.
 
-#### 6. There is no time limit and no extra point for doing it fast
+#### 6. Time
 
-Most of the people taking the challenges already have a full time job.
-So take your time. Don't rush through it. There is no extra point
-for doing it fast.
+Your recruiter has provided the deadline in their email so spend as much or as little time on this as you'd like, although we'd typically suggest dedicating a few hours to complete."
 
 #### 7. Programming Language
 
