@@ -35,6 +35,6 @@ If you want to write test for your solutions then please go ahead, but no points
 
 Your recruiter has provided the deadline in their email so spend as much or as little time on this as you'd like, although we'd typically suggest dedicating a few hours to complete."
 
-#### 7. Programming Language
+#### 7. Programming Languages/Frameworks
 
-Your choice on programming language to use, however the Maxwell stack currently is mostly Ruby and Javascript.
+It's your choice on which programming language to use, however the Maxwell stack is predominately Ruby/Rails and Javascript/React. If you are applying for a Front End position, consider developing your solution with a browser based UI rather than having it execute as a command line program.
