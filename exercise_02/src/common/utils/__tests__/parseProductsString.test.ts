@@ -5,27 +5,27 @@ describe("parseProductsString", () => {
     const samepleInput = "milk, bread, banana";
     const parsedValue = parseProductsString(samepleInput);
     expect(parsedValue).toEqual({
-      Milk: 1,
-      Bread: 1,
-      Banana: 1,
+      milk: 1,
+      bread: 1,
+      banana: 1,
     });
   });
 
   it("returns the accumulated count for banana", () => {
-    const samepleInput = "banana, milk, bread, banana";
+    const samepleInput = "banana, milk, bread, Banana";
     const parsedValue = parseProductsString(samepleInput);
     expect(parsedValue).toEqual({
-      Milk: 1,
-      Bread: 1,
-      Banana: 2,
+      milk: 1,
+      bread: 1,
+      banana: 2,
     });
   });
 
-  it("returns the keys with uppercase", () => {
-    const samepleInput = "banana, milk, bread, banana";
+  it("returns the keys with lowercase", () => {
+    const samepleInput = "banana, milk, bread, Banana";
     const parsedValue = parseProductsString(samepleInput);
     expect(
-      Object.keys(parsedValue).find((value) => value === "Banana")
+      Object.keys(parsedValue).find((value) => value === "banana")
     ).not.toBeNull();
   });
 });
