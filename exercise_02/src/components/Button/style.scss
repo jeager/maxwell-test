@@ -33,4 +33,14 @@
     width: 32px;
     height: 32px;
   }
+
+  &.green {
+    background-color: green;
+    color: #ffffff;
+  }
+
+  &.red {
+    background-color: red;
+    color: #ffffff;
+  }
 }

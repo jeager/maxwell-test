@@ -51,7 +51,7 @@ export default function Calculator({
           onChange={handleProductChange}
           value={productsString}
         />
-        <Button small onClick={handleClearInput}>
+        <Button small color="red" onClick={handleClearInput}>
           X
         </Button>
       </div>
@@ -63,7 +63,9 @@ export default function Calculator({
         ))}
       </div>
       <div style={{ marginTop: 24 }}>
-        <Button onClick={handleCalculate}>Calculate</Button>
+        <Button color="green" onClick={handleCalculate}>
+          Calculate
+        </Button>
       </div>
       <div className="results-container">
         {bill.length > 0 && (
