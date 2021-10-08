@@ -19,10 +19,15 @@
 
 .results-container {
   display: flex;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 12px;
+  transition: height 0.5s;
+  height: 50px;
+
+  &.open {
+    height: 150px;
+  }
 }
 
 .buttons-container {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import parseProductsString from "../../common/utils/parseProductsString";
 import Button from "../../components/Button";
 import { TProduct } from "../../type";
@@ -43,8 +43,17 @@ export default function Calculator({
     setBill([]);
   };
 
+  const resultClassName = useMemo(
+    () => `results-container ${bill.length > 0 ? "open" : ""}`,
+    [bill.length]
+  );
+
   return (
     <div className="calculator-layout">
+      <img
+        src="https://himaxwell.net/wp-content/uploads/2020/05/maxwell-logo.svg"
+        alt="maxwell logo"
+      />
       <div className="input-container">
         <input
           className="products-input"
@@ -67,7 +76,7 @@ export default function Calculator({
           Calculate
         </Button>
       </div>
-      <div className="results-container">
+      <div className={resultClassName}>
         {bill.length > 0 && (
           <table>
             <thead>
