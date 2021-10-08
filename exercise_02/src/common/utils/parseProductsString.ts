@@ -1,4 +1,4 @@
-type TProductSummary = Record<string, number>;
+export type TProductSummary = Record<string, number>;
 
 export default function parseProductsString(
   productsString: string
@@ -7,6 +7,7 @@ export default function parseProductsString(
     .replace(/ /g, "")
     .split(",")
     .map((product) => product.toLowerCase());
+
   const productsSummary: TProductSummary = productsArray.reduce(
     (summary: TProductSummary, product) => {
       if (summary[product]) {
